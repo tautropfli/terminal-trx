@@ -124,6 +124,10 @@ impl Terminal {
             })
         }
     }
+
+    pub(crate) fn has_connected_stdio_stream(&self) -> bool {
+        self.same_as_stdin || self.same_as_stdout || self.same_as_stderr
+    }
 }
 
 impl Terminal {

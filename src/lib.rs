@@ -150,6 +150,11 @@ impl Terminal {
             _phantom_data: PhantomData,
         }
     }
+
+    /// Tests if at least one of the standard I/O stream (stdin, stdout, stderr) is connected to this terminal.
+    pub fn has_connected_stdio_stream(&self) -> bool {
+        self.0.has_connected_stdio_stream()
+    }
 }
 
 /// Guard for exclusive read- and write access to the terminal.

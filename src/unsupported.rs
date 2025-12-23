@@ -45,6 +45,10 @@ impl Terminal {
     pub(crate) fn enable_raw_mode(&mut self) -> io::Result<RawModeGuard<'_>> {
         unreachable!()
     }
+
+    pub(crate) fn has_connected_stdio_stream(&self) -> bool {
+        unreachable!()
+    }
 }
 
 #[derive(Debug)]

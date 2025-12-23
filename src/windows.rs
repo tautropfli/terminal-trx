@@ -178,6 +178,10 @@ impl Terminal {
             old_output_mode,
         })
     }
+
+    pub(crate) fn has_connected_stdio_stream(&self) -> bool {
+        self.conin_same_as_stdin || self.conout_same_as_stdout || self.conout_same_as_stderr
+    }
 }
 
 fn set_raw_mode_if_necessary(
