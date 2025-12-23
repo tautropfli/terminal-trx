@@ -2,7 +2,7 @@
 name = "terminal-trx"
 description = "Provides a handle to the terminal of the current process"
 readme = "readme.md"
-repository = "https://github.com/bash/terminal-trx"
+repository = "https://github.com/tautropfli/terminal-trx"
 categories = ["command-line-interface"]
 license = "MIT OR Apache-2.0"
 version = "0.2.6"
