@@ -1,4 +1,8 @@
 # Changelog
+## 0.2.6
+* Add `Terminal::has_connected_stdio_stream` to test if at least
+  one standard I/O stream is connected to a given terminal.
+
 ## 0.2.5
 * Update `windows-sys` to 0.61
 * Raise the MSRV to 1.74 (this matches `terminal-colorsaurus`' MSRV)
